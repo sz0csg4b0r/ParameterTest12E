@@ -18,11 +18,15 @@
             Console.WriteLine($"Hivás előtt az érték: {b}");
             DuplazRef(ref b);
             Console.WriteLine($"A hívás után az {b} érték nem változott");
+            Console.WriteLine();
+
             //3. Referencia szerinti átadás OUT 
             Console.WriteLine("3. Referencia OUT szerinti átadás");
             int osszeg;
             int szorzat;
             Szamol(13, 67, out osszeg, out szorzat);
+            Console.WriteLine($"A hívás után az összeg: {osszeg}, a szorzat {szorzat}");
+
 
         }
 
